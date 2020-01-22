@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700,900&display=swap&subset=chinese-traditional");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: "Noto Sans TC", sans-serif;
+  color: #6c757d;
+}
+
+a:focus{
+  outline: none;
+}
+
+.header {
+  /* background-image: linear-gradient(45deg, #ffc796 0%, #ff6b95 100%); */
+  background: #d66d75; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e29587,
+    #d66d75
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e29587,
+    #d66d75
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header .row {
+  margin: 0;
+}
+nav {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 50px;
+  z-index: 9999;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  width: 150px;
+}
+
+nav ul li a {
+  line-height: 60px;
+  color: azure;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: azure;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+.scroll_bg {
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  padding: 5px 50px;
+  transition: 0.5s;
+}
+.scroll_bg ul {
+  line-height: 35px;
+  transition: 0.5s;
+}
+
+.scroll_bg ul li a {
+  color: #6c757d;
+  transition: 0.5s;
+}
+
+.scroll_bg ul li a:hover {
+  color: #ff6b95;
+}
+
+.header img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.backToTop {
+  font-size: 2.5rem;
+  color: #d66d75;
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+}
+.backToTop a{
+  color: #d66d75;
+}
+
+#firstPageText p {
+  margin-bottom: 0.2rem;
+}
+#firstPageText p a {
+  color: #fff;
+}
+
+.scroll {
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+}
+
+.scroll a i {
+  font-size: 30px;
+  animation: pagedown 2s ease-in-out infinite;
+}
+
+@keyframes pagedown {
+  0% {
+    transform: translate(0, -22%);
+  }
+  50% {
+    text-shadow: 0 0 20px #fff;
+  }
+  100% {
+    transform: translate(0, 33%);
+  }
+}
+
+.navbarHeight {
+  height: 70px;
+}
+
+#resume canvas {
+  background-color: #d66d75;
+  height: 10px;
+  width: 10px;
+}
+
+.text-main {
+  color: #d66d75;
+}
+
+#resume ul li {
+  list-style: none;
+}
+
+#resume h6 {
+  letter-spacing: 10px;
+}
+
+.mb-8 {
+  margin-bottom: 8rem;
+}
+
+.text-num {
+  font-family: "Roboto Mono", monospace;
+}
+/* 
+ 藍到白
+ background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); 
+ 綠到黃
+ background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
+ 粉到橘
+ background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
+ 
+ 
+ */
