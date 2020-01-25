@@ -16,6 +16,7 @@ a:focus {
 }
 
 .header {
+  width: 100%;
   /* background-image: linear-gradient(45deg, #ffc796 0%, #ff6b95 100%); */
   background: #d66d75; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -32,6 +33,7 @@ a:focus {
 .header .row {
   margin: 0;
 }
+
 nav {
   width: 100%;
   height: 100px;
@@ -39,17 +41,85 @@ nav {
   top: 0;
   left: 0;
   padding: 20px 50px;
+  z-index: 99;
+}
+
+/* 行動裝置nav */
+.burger{
+  height: 100px;
+  position: relative;
+  top: -20px;
+  bottom: -20px;
+  left: -50px;
+  right: -50px;
+}
+
+nav i {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 1.3rem;
+  left: 1.3rem;
+  color: azure;
+  cursor: pointer;
+}
+
+nav i:hover{
+  opacity: 0.8;
+}
+
+.scroll_bg .burger{
+  height: 70px;
+  position: relative;
+  top: -5px;
+  bottom: -5px;
+  left: -50px;
+  right: -50px;
+}
+
+.scroll_bg .burger i {
+  line-height: 30px;
+  transition: 0.5s;
+  color: #6c757d;
+  cursor: pointer;
+}
+
+.scroll_bg i:hover{
+  color: #ff6b95;
+}
+
+.mobile_menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
   z-index: 9999;
 }
+
+.mobile_menu ul{
+  height: 100vh;
+}
+
+.mobile_menu ul li a{
+  transition: 0.5s;
+}
+
+.mobile_menu ul li a:hover{
+  color: #ff6b95;
+  transition: 0.5s;
+}
+
+.scroll_bg .mobile_menu ul li a{
+  color: azure;
+}
+
+/* pc nav */
 nav ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
-}
-
-nav ul li {
-  width: 150px;
 }
 
 nav ul li a {
@@ -58,6 +128,7 @@ nav ul li a {
   padding: 0 10px;
   text-transform: uppercase;
   font-weight: bold;
+  text-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 nav ul li a:hover {
@@ -88,8 +159,8 @@ nav ul li a:hover {
 }
 
 .header img {
-  width: 200px;
-  height: 200px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
 }
 
@@ -99,10 +170,14 @@ nav ul li a:hover {
   position: fixed;
   bottom: 10px;
   right: 20px;
-  z-index: 9999;
+  z-index: 88;
 }
+
 .backToTop a {
   color: #d66d75;
+}
+#firstPageText {
+  text-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.175);
 }
 
 #firstPageText p {
@@ -161,15 +236,15 @@ nav ul li a:hover {
 
 #resume h6,
 #portfolio h6 {
-  letter-spacing: 10px;
+  letter-spacing: 8px;
 }
 
 .card-text {
   letter-spacing: 3px;
 }
 
-.mb-8 {
-  margin-bottom: 8rem;
+.mb-6 {
+  margin-bottom: 5rem;
 }
 
 .text-num {
@@ -189,8 +264,7 @@ nav ul li a:hover {
   padding: 0;
 }
 
-#portfolio .card-body{
-  height: 115px;
+.card-body {
   padding: 10px 20px;
 }
 
@@ -199,9 +273,16 @@ nav ul li a:hover {
 }
 
 .card-title {
+  height: 32vh;
   overflow: hidden;
   margin: 0;
   position: relative;
+}
+
+.card-title img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .card-img-top {
@@ -214,29 +295,67 @@ nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999;
+  z-index: 98;
   background-color: #e29587;
   border-radius: 15px;
   padding: 5px 10px;
 }
 
-.card-title:hover .hoverView{
+.card-title:hover .hoverView {
   display: inline;
 }
-.card-title:hover img{
+.card-title:hover img {
   display: inline;
   overflow: hidden;
   transform: scale(1.2);
   filter: brightness(0.5);
 }
 
-/* 
- 藍到白
- background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); 
- 綠到黃
- background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
- 粉到橘
- background-image: linear-gradient(-45deg, #FFC796 0%, #FF6B95 100%);
- 
- 
- */
+@media (min-width: 576px) {
+  .card-body {
+    min-height: 15vh;
+  }
+}
+
+/* @media (max-width: 768px) {
+  nav ul li {
+    display: none;
+  }
+} */
+
+@media (min-width: 768px) {
+  .card-body {
+    min-height: 25vh;
+  }
+  nav ul li {
+    width: 19vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-body {
+    min-height: 24vh;
+  }
+  nav ul li {
+    width: 14vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-body {
+    min-height: 17vh;
+  }
+  nav ul li {
+    width: 12vw;
+  }
+}
+
+footer {
+  background-color: #e29587;
+  min-height: 10vh;
+}
+
+footer p {
+  line-height: 10vh;
+  margin: 0;
+}
