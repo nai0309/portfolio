@@ -45,7 +45,7 @@ nav {
 }
 
 /* 行動裝置nav */
-.burger{
+.burger {
   height: 100px;
   position: relative;
   top: -20px;
@@ -63,11 +63,11 @@ nav i {
   cursor: pointer;
 }
 
-nav i:hover{
+nav i:hover {
   opacity: 0.8;
 }
 
-.scroll_bg .burger{
+.scroll_bg .burger {
   height: 70px;
   position: relative;
   top: -5px;
@@ -83,11 +83,11 @@ nav i:hover{
   cursor: pointer;
 }
 
-.scroll_bg i:hover{
+.scroll_bg i:hover {
   color: #ff6b95;
 }
 
-.mobile_menu{
+.mobile_menu {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,20 +97,20 @@ nav i:hover{
   z-index: 9999;
 }
 
-.mobile_menu ul{
+.mobile_menu ul {
   height: 100vh;
 }
 
-.mobile_menu ul li a{
+.mobile_menu ul li a {
   transition: 0.5s;
 }
 
-.mobile_menu ul li a:hover{
+.mobile_menu ul li a:hover {
   color: #ff6b95;
   transition: 0.5s;
 }
 
-.scroll_bg .mobile_menu ul li a{
+.scroll_bg .mobile_menu ul li a {
   color: azure;
 }
 
@@ -158,10 +158,10 @@ nav ul li a:hover {
   color: #ff6b95;
 }
 
-.header img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+
+
+.firstPage {
+  height: 60vh;
 }
 
 .backToTop {
@@ -183,8 +183,13 @@ nav ul li a:hover {
 #firstPageText p {
   margin-bottom: 0.2rem;
 }
+
 #firstPageText p a {
   color: #fff;
+}
+
+#firstPageText .jobtitle {
+  font-size: 0.5rem;
 }
 
 .scroll {
@@ -218,6 +223,21 @@ nav ul li a:hover {
   background-color: #d66d75;
   height: 10px;
   width: 10px;
+}
+
+.resume-img{
+  height: 6vh;
+  width: 6vh;
+}
+
+.resume-img-view{
+  font-size: 0.5rem;
+  color: #6c757d;
+  line-height: 6vh;
+}
+
+#resume a{
+  text-decoration: none;
 }
 
 #portfolio canvas {
@@ -356,6 +376,15 @@ footer {
 }
 
 footer p {
-  line-height: 10vh;
+  line-height: 5vh;
   margin: 0;
+}
+
+footer p a {
+  font-size: 1.2rem;
+  margin: 0 0.4rem;
+}
+
+footer p a:hover {
+text-decoration: none;
 }

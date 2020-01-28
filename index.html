@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="css/all.css" />
-    <title>NaiHui Portfolio</title>
+    <title>NaiHui's Portfolio</title>
   </head>
 
   <body>
@@ -27,50 +27,52 @@
       <nav>
         <!-- 行動裝置burger btn start -->
         <div class="burger d-flex d-md-none">
-        <i class="fas fa-bars" onclick="show_mobile_menu()"></i>
-      </div>
-      <!-- 行動裝置burger btn end -->
+          <i class="fas fa-bars" onclick="show_mobile_menu()"></i>
+        </div>
+        <!-- 行動裝置burger btn end -->
 
-      <!-- 行動裝置選單 start -->
-      <div class="mobile_menu d-none" onclick="close_mobile_menu()">
-        <ul class="d-flex flex-column text-center justify-content-center align-items-center">
-          <li>
-            <a
-              href="#introduction"
-              onmouseover="this.innerHTML='About Me.'"
-              onmouseout="this.innerHTML='簡介'"
-              >簡介</a
-            >
-          </li>
-          <li>
-            <a
-              href="#resume"
-              onmouseover="this.innerHTML='Resume.'"
-              onmouseout="this.innerHTML='履歷'"
-              >履歷</a
-            >
-          </li>
-          <li>
-            <a
-              href="#portfolio"
-              onmouseover="this.innerHTML='Portfolio.'"
-              onmouseout="this.innerHTML='作品集'"
-              >作品集</a
-            >
-          </li>
-          <li>
-            <a
-              href="img/profile"
-              onmouseover="this.innerHTML='Download CV.'"
-              onmouseout="this.innerHTML='履歷下載'"
-              download
-              >履歷下載</a
-            >
-          </li>
-        </ul>
-
-      </div>
-      <!-- 行動裝置選單 end -->
+        <!-- 行動裝置選單 start -->
+        <div class="mobile_menu d-none" onclick="close_mobile_menu()">
+          <ul
+            class="d-flex flex-column text-center justify-content-center align-items-center"
+          >
+            <li>
+              <a
+                class="text-white"
+                href="#introduction"
+                onmouseover="this.innerHTML='About Me.'"
+                onmouseout="this.innerHTML='簡介'"
+                >簡介</a
+              >
+            </li>
+            <li>
+              <a
+                href="#resume"
+                onmouseover="this.innerHTML='Resume.'"
+                onmouseout="this.innerHTML='履歷'"
+                >履歷</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                onmouseover="this.innerHTML='Portfolio.'"
+                onmouseout="this.innerHTML='作品集'"
+                >作品集</a
+              >
+            </li>
+            <li>
+              <a
+                href="廖乃慧履歷.pdf"
+                onmouseover="this.innerHTML='Download CV.'"
+                onmouseout="this.innerHTML='履歷下載'"
+                download
+                >履歷下載</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- 行動裝置選單 end -->
 
         <ul class="pc-menu d-none d-md-flex">
           <li>
@@ -99,7 +101,7 @@
           </li>
           <li>
             <a
-              href="img/profile"
+              href="廖乃慧履歷.pdf"
               onmouseover="this.innerHTML='Download CV.'"
               onmouseout="this.innerHTML='履歷下載'"
               download
@@ -109,43 +111,51 @@
         </ul>
       </nav>
       <!-- 導覽列 end -->
-      <div
-        class="h-100 row d-flex flex-column justify-content-center align-items-center"
-      >
+      <div class="h-100 row flex-column flex-md-row justify-content-center align-items-center">
+        <div class="col-auto">
         <img
           class="img-fluid rounded-circle wow bounceInDown shadow-lg"
           src="img/profile_circle.jpg"
           alt="大頭照"
           title="大頭照"
         />
+      </div>
         <div
           id="firstPageText"
-          class="row d-flex align-items-center text-white wow bounceInUp"
+          class="col-auto d-flex align-items-center text-white wow bounceInUp"
         >
-          <div class="text-center my-3">
+          <div class="text-center m-4">
             <p class="h2">
               廖乃慧<span class="h3 font-weight-bold"> Nai-Hui Liao</span>
             </p>
-            <p>網頁程式設計師 Web Designer</p>
+            <p class="jobtitle">- 網頁程式設計師 Web Designer -</p>
             <p>1994 / 04 / 19</p>
             <p>
-              <i class="fas fa-globe-asia"></i> 現居新北三重 New Taipei, Taiwan
+              <i class="fas fa-globe-asia"></i>
+              現居新北三重 New Taipei, Taiwan
             </p>
             <p>
-              <a href="mailto:nainai0309@gmail.com"
-                ><i class="fas fa-envelope"></i> nainai0309@gmail.com</a
-              >｜<a href="telto:+886975233340"
-                ><i class="fas fa-mobile"></i> (886)975233340</a
-              >
-              <br />
+              <a href="mailto:nainai0309@gmail.com">
+                <i class="fas fa-envelope"></i>
+                nainai0309@gmail.com
+              </a>
+            </p>
+            <p>
+              <a href="tel:+886975233340">
+                <i class="fas fa-mobile"></i>
+                (+886)975233340
+              </a>
+            </p>
+            <p>
               <a
                 href="https://www.linkedin.com/in/naihui-liao-98349216b/"
                 target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/nai0309" target="_blank"
-                ><i class="fab fa-github-square"></i
-              ></a>
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/nai0309" target="_blank">
+                <i class="fab fa-github-square"></i>
+              </a>
             </p>
           </div>
         </div>
@@ -166,10 +176,10 @@
       <div class="container">
         <h1 class="text-uppercase my-5 wow slideInLeft">About Me.</h1>
         <p>
-          任職關鍵字、原生等數位廣告文案編輯近3年，每日瀏覽大量網頁，撰寫的不只是引人注目的文案，更要從各式網頁中挖掘客戶優勢，發現許多客人產品市場競爭力強，但敗在網頁互動、呈現不夠完整，進而開始對網頁設計產生濃厚興趣。
+          任職關鍵字、原生等數位廣告文案編輯近3年，每日瀏覽大量網頁，撰寫的不只是引人注目的文案，更要從各式網頁中挖掘客戶優勢；發現許多客人的產品，市場競爭力強，但敗在網頁互動、呈現不夠完整，進而開始對網頁設計產生濃厚興趣。
         </p>
         <p>
-          熱愛挑戰不一樣的人生，跨出舒適圈，故毅然決然轉換跑道，在進入網頁開發領域前，於泰山職訓局參加「前端網頁開發技術」全日制班，透過600小時的課程，習得HTML、CSS、PHP、JavaScript、jQuery、API串接、MySQL資料庫建置、Photoshop、Illustrator視覺影像設計，精實技能彌補知識落差，並於網頁開發領域盡情發揮潛力，朝全端工程師目標邁進。
+          熱愛挑戰不一樣的人生，跨出舒適圈，故毅然決然轉換跑道，在進入網頁開發領域前，於泰山職訓局參加「前端網頁開發技術」全日制班，透過600小時的課程，習得HTML、CSS、PHP、JavaScript、jQuery、API串接、MySQL資料庫建置、Photoshop、Illustrator視覺影像設計，精進技能彌補知識落差，期望未來能在網頁開發領域盡情發揮，並朝全端工程師目標邁進。
         </p>
       </div>
     </section>
@@ -230,7 +240,7 @@
         <!-- 技能 end -->
 
         <!-- 學歷 start -->
-        <h6 class="my-5">-教育Education-</h6>
+        <h6 class="my-5">-學歷Education-</h6>
         <div class="row border-left flex-column mb-6">
           <div class="col">
             <div class="my-3">
@@ -245,12 +255,21 @@
               </small>
             </div>
             <ul>
-              <li class="my-3 font-weight-bold text-num text-secondary">2019/10 - 2020/01</li>
-              <li>- 習得HTML、CSS前端基礎網頁技術</li>
-              <li>- 使用JS、JQ為網頁增加動態效果</li>
-              <li>- 以Bootstrap框架實作專題網頁</li>
-              <li>- Photoshop ＆ Illustrator修圖設計應用</li>
+              <li class="my-3 font-weight-bold text-num text-secondary">
+                2019/10 - 2020/01
+              </li>
+              <li class="mb-3">
+                <a class="image-popup" href="img/resume_certificate.jpg">
+                <img class="img-fluid resume-img rounded-circle" src="img/resume_certificate.jpg" alt="結訓證書">
+                <span class="resume-img-view">結訓證書點擊檢視</span>
+              </a>
+            </li>
+              <li>- 學習HTML、CSS前端基礎網頁技術</li>
+              <li>- 了解如何使用JS、JQ為網頁增加動態效果</li>
+              <li>- 以Bootstrap框架切版，實作專題網頁</li>
               <li>- PHP與MySQL後端資料管理串接實作</li>
+              <li>- 熟悉Photoshop ＆ Illustrator 操作應用</li>
+              <li>- 從實例中學習平面、ICON、LOGO、海報等設計</li>
             </ul>
           </div>
           <div class="col">
@@ -266,7 +285,9 @@
               </small>
             </div>
             <ul>
-              <li class="my-3 font-weight-bold text-num text-secondary">2012/09 - 2016/06</li>
+              <li class="my-3 font-weight-bold text-num text-secondary">
+                2012/09 - 2016/06
+              </li>
             </ul>
           </div>
         </div>
@@ -279,7 +300,7 @@
             <div class="my-3">
               <canvas class="mr-2"></canvas>
               <span class="h5 text-main">
-                飛翱網訊股份有限公司 - Yahoo數位廣告文案編輯組長
+                飛翱網訊股份有限公司 - Yahoo數位廣告編輯組長
               </span>
               <br />
               <small class="ml-4 text-main">
@@ -288,11 +309,13 @@
               </small>
             </div>
             <ul>
-              <li class="my-3 font-weight-bold text-num text-secondary">2016/07 - 2019/05</li>
-              <li>- 4人以下團隊工作指派</li>
+              <li class="my-3 font-weight-bold text-num text-secondary">
+                2016/07 - 2019/05
+              </li>
+              <li>- 管理4人以下團隊，並指派每日任務</li>
               <li>- 部門專案進度監控</li>
-              <li>- 新人訓練：廣告規範、文案撰寫技巧</li>
-              <li>- 建議書內容校稿、品質控管</li>
+              <li>- 新人訓練：廣告規範、文案撰寫等技巧</li>
+              <li>- 廣告建議書內容校稿、品質控管</li>
               <li>- 獨立作業執行關鍵字、原生廣告建議書規劃</li>
               <li>- 跨部門溝通：廣告優化、執行方式建議</li>
             </ul>
@@ -1419,7 +1442,10 @@
               <div class="card-body">
                 <canvas class="mr-2"></canvas>
                 <span class="card-text font-weight-bold mb-1 text-">
-                  <a class="image-popup text-secondary" href="img/graphic_鼠年行事曆.jpg">行事曆：109年樂不思鼠</a
+                  <a
+                    class="image-popup text-secondary"
+                    href="img/graphic_鼠年行事曆.jpg"
+                    >行事曆：109年樂不思鼠</a
                   >
                   <small class="text-num font-weight-bolder">2019/11</small>
                 </span>
@@ -1527,7 +1553,10 @@
               <div class="card-body">
                 <canvas class="mr-2"></canvas>
                 <span class="card-text font-weight-bold mb-1 text-">
-                  <a class="image-popup text-secondary" href="img/graphic_柏可揚名片.jpg">名片設計：柏可揚實業</a
+                  <a
+                    class="image-popup text-secondary"
+                    href="img/graphic_柏可揚名片.jpg"
+                    >名片設計：柏可揚實業</a
                   >
                   <small class="text-num font-weight-bolder">2017/04</small>
                 </span>
@@ -1635,7 +1664,10 @@
               <div class="card-body">
                 <canvas class="mr-2"></canvas>
                 <span class="card-text font-weight-bold mb-1 text-">
-                  <a class="image-popup text-secondary" href="img/graphic_聖誕節促銷圖.jpg">彩妝平面：聖誕節促銷圖</a
+                  <a
+                    class="image-popup text-secondary"
+                    href="img/graphic_聖誕節促銷圖.jpg"
+                    >彩妝平面：聖誕節促銷圖</a
                   >
                   <small class="text-num font-weight-bolder">2016/12</small>
                 </span>
@@ -1651,7 +1683,6 @@
             </div>
           </div>
           <!-- 作品卡片 end -->
-
         </div>
       </div>
     </section>
@@ -1659,7 +1690,26 @@
 
     <!-- footer start -->
     <footer>
-      <p class="text-white font-weight-bold text-center">Copyright © 2020 by Nai-Hui Liao</p>
+      <p class="text-white font-weight-bold text-center">
+        Copyright © 2020 by Nai-Hui Liao
+        <br />
+        <a class="text-white" href="mailto:nainai0309@gmail.com">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a class="text-white" href="tel:+886975233340">
+          <i class="fas fa-mobile"></i>
+        </a>
+        <a
+          class="text-white"
+          href="https://www.linkedin.com/in/naihui-liao-98349216b/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a class="text-white" href="https://github.com/nai0309" target="_blank">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </p>
     </footer>
     <!-- footer end -->
 
@@ -1708,18 +1758,17 @@
 
       // 行動裝置menu list show up start
       var mobile_menu = document.getElementsByClassName("mobile_menu")[0];
-      function show_mobile_menu(){
-        mobile_menu.classList.remove('d-none');
+      function show_mobile_menu() {
+        mobile_menu.classList.remove("d-none");
         $(window).on("scroll", function() {
-          mobile_menu.classList.add('d-none');
-        })
+          mobile_menu.classList.add("d-none");
+        });
       }
 
-      function close_mobile_menu(){
-        mobile_menu.classList.add('d-none');
+      function close_mobile_menu() {
+        mobile_menu.classList.add("d-none");
       }
       // 行動裝置menu list show up end
-
     </script>
   </body>
 </html>
