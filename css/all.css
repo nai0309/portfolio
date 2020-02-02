@@ -105,12 +105,12 @@ nav i:hover {
   transition: 0.5s;
 }
 
-.mobile_menu ul li a:hover {
+.mobile_menu ul li a:hover, #navdropdown_mobile:hover {
   color: #ff6b95;
   transition: 0.5s;
 }
 
-.scroll_bg .mobile_menu ul li a {
+.scroll_bg .mobile_menu ul li a{
   color: azure;
 }
 
@@ -122,7 +122,7 @@ nav ul {
   padding: 0;
 }
 
-nav ul li a {
+nav ul li a, #navdropdown, #navdropdown_mobile{
   line-height: 60px;
   color: azure;
   padding: 0 10px;
@@ -131,7 +131,7 @@ nav ul li a {
   text-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-nav ul li a:hover {
+nav ul li a:hover, #navdropdown:hover {
   text-decoration: none;
   color: azure;
   font-weight: bold;
@@ -149,12 +149,12 @@ nav ul li a:hover {
   transition: 0.5s;
 }
 
-.scroll_bg ul li a {
+.scroll_bg ul li a, .scroll_bg #navdropdown {
   color: #6c757d;
   transition: 0.5s;
 }
 
-.scroll_bg ul li a:hover {
+.scroll_bg ul li a:hover, .scroll_bg #navdropdown:hover {
   color: #ff6b95;
 }
 

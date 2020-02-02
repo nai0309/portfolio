@@ -38,7 +38,6 @@
           >
             <li>
               <a
-                class="text-white"
                 href="#introduction"
                 onmouseover="this.innerHTML='About Me.'"
                 onmouseout="this.innerHTML='簡介'"
@@ -61,15 +60,16 @@
                 >作品集</a
               >
             </li>
-            <li>
-              <a
-                href="廖乃慧履歷.pdf"
-                onmouseover="this.innerHTML='Download CV.'"
-                onmouseout="this.innerHTML='履歷下載'"
-                download
-                >履歷下載</a
-              >
-            </li>
+            <li class="dropdown">
+              <a id="navdropdown_mobile" class="dropdown-toggle" data-toggle="dropdown" onmouseover="this.innerHTML='Download CV.'"
+              onmouseout="this.innerHTML='履歷下載'">
+              履歷下載
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navdropdown_mobile">
+                <a class="dropdown-item text-secondary" href="廖乃慧履歷.pdf" download>中文履歷</a>
+                <a class="dropdown-item text-secondary" href="NaiHui Liao CV.pdf" download>English CV</a>
+              </div>
+          </li>
           </ul>
         </div>
         <!-- 行動裝置選單 end -->
@@ -99,27 +99,30 @@
               >作品集</a
             >
           </li>
-          <li>
-            <a
-              href="廖乃慧履歷.pdf"
-              onmouseover="this.innerHTML='Download CV.'"
-              onmouseout="this.innerHTML='履歷下載'"
-              download
-              >履歷下載</a
-            >
+          <li class="dropdown">
+              <a id="navdropdown" data-toggle="dropdown" onmouseover="this.innerHTML='Download CV.'"
+              onmouseout="this.innerHTML='履歷下載'">
+              履歷下載
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navdropdown">
+                <a class="dropdown-item" href="廖乃慧履歷.pdf" download>中文履歷</a>
+                <a class="dropdown-item" href="NaiHui Liao CV.pdf" download>English CV</a>
+              </div>
           </li>
         </ul>
       </nav>
       <!-- 導覽列 end -->
-      <div class="h-100 row flex-column flex-md-row justify-content-center align-items-center">
+      <div
+        class="h-100 row flex-column flex-md-row justify-content-center align-items-center"
+      >
         <div class="col-auto">
-        <img
-          class="img-fluid rounded-circle wow bounceInDown shadow-lg"
-          src="img/profile_circle.jpg"
-          alt="大頭照"
-          title="大頭照"
-        />
-      </div>
+          <img
+            class="img-fluid rounded-circle wow bounceInDown shadow-lg"
+            src="img/profile_circle.jpg"
+            alt="大頭照"
+            title="大頭照"
+          />
+        </div>
         <div
           id="firstPageText"
           class="col-auto d-flex align-items-center text-white wow bounceInUp"
@@ -129,7 +132,6 @@
               廖乃慧<span class="h3 font-weight-bold"> Nai-Hui Liao</span>
             </p>
             <p class="jobtitle">- 網頁設計工程師 Web Developer -</p>
-            <p>1994 / 04 / 19</p>
             <p>
               <i class="fas fa-globe-asia"></i>
               現居新北三重 New Taipei, Taiwan
@@ -176,10 +178,7 @@
       <div class="container">
         <h1 class="text-uppercase my-5 wow slideInLeft">About Me.</h1>
         <p>
-          任職數位廣告文案編輯近3年，每日瀏覽大量網頁，撰寫的不只是文案，更要從各式網頁中挖掘客戶優勢；網站就如一家公司的門面，不論是呈現的完整度、介面操作及互動是否夠直覺，對數位廣告來說，網頁中的每個細節，都會影響使用者體驗，因而對網頁開發產生濃厚興趣。
-        </p>
-        <p>
-          因此毅然決然轉換跑道，在進入網頁開發領域前，於職訓局參加「網頁開發技術」全日職前班，透過600小時的課程，認識並實際以HTML、CSS、PHP、JavaScript、jQuery、API串接、MySQL資料庫建置、Photoshop、Illustrator視覺影像設計等技術做出許多作品，加強跨領域前的技能訓練，最終將以全端工程師目標邁進。
+          任職近三年數位廣告編輯，因每日需瀏覽大量網頁，開始培養出對網頁設計的興趣，故決定轉職，並於勞動部職訓局參加「前端網頁開發技術」600小時專班，習得HTML、CSS、PHP、MySQL、JavaScript、jQuery等網頁開發技術，興趣是寫JavaScript、jQuery，目前正自學Vue.js中，最終目標是以全端工程師邁進。
         </p>
       </div>
     </section>
@@ -190,6 +189,106 @@
       <div class="navbarHeight"></div>
       <div class="container">
         <h1 class="text-uppercase my-5 wow slideInLeft">resume.</h1>
+
+        <!-- 學歷 start -->
+        <h6 class="my-5">-學習經歷Education-</h6>
+        <div class="row border-left flex-column mb-6">
+          <div class="col">
+            <div class="my-3">
+              <canvas class="mr-2"></canvas>
+              <span class="h5 text-main">
+                勞動部勞動力發展署 - 前端網頁開發技術（泰山）全日制職業訓練
+              </span>
+              <br />
+              <small class="ml-4 text-main">
+                Workforce Development Agency, MOL - Front-end Web Development
+                Technology Training
+              </small>
+            </div>
+            <ul>
+              <li class="my-3 font-weight-bold text-num text-secondary">
+                2019/10 - 2020/01
+              </li>
+              <li class="mb-3">
+                <a class="image-popup" href="img/resume_certificate.jpg">
+                  <img
+                    class="img-fluid resume-img rounded-circle"
+                    src="img/resume_certificate.jpg"
+                    alt="結訓證書"
+                  />
+                  <span class="resume-img-view">結訓證書點擊檢視</span>
+                </a>
+              </li>
+              <li>
+                -
+                訓練網頁開發技術，前端：HTML/CSS、JavaScript、jQuery及後端：PHP和MySQL
+              </li>
+              <li>- 了解如何使用JS、JQ為網頁增加動態效果</li>
+              <li>- 學習PHP與MySQL後端資料管理串接</li>
+              <li>- 熟悉Photoshop 及Illustrator 操作設計海報、Logo、icon</li>
+              <li>- 結訓個人專題：製作蛋糕店購物車</li>
+            </ul>
+          </div>
+          <div class="col">
+            <div class="my-3">
+              <canvas class="mr-2"></canvas>
+              <span class="h5 text-main">
+                國立臺北商業大學 - 資訊管理系
+              </span>
+              <br />
+              <small class="ml-4 text-main">
+                National Taipei University of Business - Bachelor of Information
+                Management
+              </small>
+            </div>
+            <ul>
+              <li class="my-3 font-weight-bold text-num text-secondary">
+                2012/09 - 2016/06
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 學歷 end -->
+
+        <!-- 經歷 start -->
+        <h6 class="my-5">-經歷Experience-</h6>
+        <div class="row border-left">
+          <div class="col">
+            <div class="my-3">
+              <canvas class="mr-2"></canvas>
+              <span class="h5 text-main">
+                飛翱網訊股份有限公司
+              </span>
+              <br />
+              <small class="ml-4 text-main">
+                800 TeleServices Information Service Co., Ltd. - Team Leader Of
+                Copywriter
+              </small>
+            </div>
+            <ul>
+              <li class="my-3 font-weight-bold text-secondary">
+                <canvas class="mr-2 bg-secondary rounded-circle"></canvas>
+                <span class="h6">數位廣告編輯組長 - </span>
+                <span class="text-num">2018/07 - 2019/05</span>
+              </li>
+              <li>- 管理4人以下團隊，並依團員擅長產業指派廣告任務</li>
+              <li>- 專案執行面控管：廣告內容品質、時程進度監控</li>
+              <li>- 新人訓練：廣告規範、文案撰寫等技巧</li>
+              <li>- 廣告建議書內容校稿、關聯度控管</li>
+            </ul>
+            <ul>
+              <li class="my-3 font-weight-bold text-secondary">
+                <canvas class="mr-2 bg-secondary rounded-circle"></canvas>
+                <span class="h6">數位廣告編輯 - </span>
+                <span class="text-num">2016/07 - 2018/07</span>
+              </li>
+              <li>- 獨立作業執行關鍵字、原生廣告建議書規劃</li>
+              <li>- 跨部門溝通：廣告優化、執行方式建議</li>
+            </ul>
+          </div>
+        </div>
+        <!-- 經歷 end -->
+
         <!-- 技能 start -->
         <h6 class="my-5">-技能Skills-</h6>
         <div class="row mb-6">
@@ -238,90 +337,6 @@
           </div>
         </div>
         <!-- 技能 end -->
-
-        <!-- 學歷 start -->
-        <h6 class="my-5">-學習經歷Education-</h6>
-        <div class="row border-left flex-column mb-6">
-          <div class="col">
-            <div class="my-3">
-              <canvas class="mr-2"></canvas>
-              <span class="h5 text-main">
-                勞動部勞動力發展署 - 前端網頁開發技術（泰山）全日制職業訓練
-              </span>
-              <br />
-              <small class="ml-4 text-main">
-                Workforce Development Agency, MOL - Front-end Web Development
-                Technology Training
-              </small>
-            </div>
-            <ul>
-              <li class="my-3 font-weight-bold text-num text-secondary">
-                2019/10 - 2020/01
-              </li>
-              <li class="mb-3">
-                <a class="image-popup" href="img/resume_certificate.jpg">
-                <img class="img-fluid resume-img rounded-circle" src="img/resume_certificate.jpg" alt="結訓證書">
-                <span class="resume-img-view">結訓證書點擊檢視</span>
-              </a>
-            </li>
-              <li>- 學習HTML、CSS前端基礎網頁技術</li>
-              <li>- 了解如何使用JS、JQ為網頁增加動態效果</li>
-              <li>- 以Bootstrap框架切版，實作專題網頁</li>
-              <li>- PHP與MySQL後端資料管理串接實作</li>
-              <li>- 熟悉Photoshop ＆ Illustrator 操作應用</li>
-              <li>- 從實例中學習平面、ICON、LOGO、海報等設計</li>
-            </ul>
-          </div>
-          <div class="col">
-            <div class="my-3">
-              <canvas class="mr-2"></canvas>
-              <span class="h5 text-main">
-                國立臺北商業大學 - 資訊管理系
-              </span>
-              <br />
-              <small class="ml-4 text-main">
-                National Taipei University of Business - Bachelor of Information
-                Management
-              </small>
-            </div>
-            <ul>
-              <li class="my-3 font-weight-bold text-num text-secondary">
-                2012/09 - 2016/06
-              </li>
-            </ul>
-          </div>
-        </div>
-        <!-- 學歷 end -->
-
-        <!-- 經歷 start -->
-        <h6 class="my-5">-經歷Experience-</h6>
-        <div class="row border-left">
-          <div class="col">
-            <div class="my-3">
-              <canvas class="mr-2"></canvas>
-              <span class="h5 text-main">
-                飛翱網訊股份有限公司 - 數位廣告編輯組長
-              </span>
-              <br />
-              <small class="ml-4 text-main">
-                800 TeleServices Information Service Co., Ltd. - Team
-                Leader Of Copywriter
-              </small>
-            </div>
-            <ul>
-              <li class="my-3 font-weight-bold text-num text-secondary">
-                2016/07 - 2019/05
-              </li>
-              <li>- 管理4人以下團隊，並指派每日任務</li>
-              <li>- 部門專案進度監控</li>
-              <li>- 新人訓練：廣告規範、文案撰寫等技巧</li>
-              <li>- 廣告建議書內容校稿、品質控管</li>
-              <li>- 獨立作業執行關鍵字、原生廣告建議書規劃</li>
-              <li>- 跨部門溝通：廣告優化、執行方式建議</li>
-            </ul>
-          </div>
-        </div>
-        <!-- 經歷 end -->
       </div>
     </section>
     <!-- 履歷 end -->
