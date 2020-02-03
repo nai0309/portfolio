@@ -129,6 +129,7 @@ nav ul li a, #navdropdown, #navdropdown_mobile{
   text-transform: uppercase;
   font-weight: bold;
   text-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.175);
+  cursor: pointer;
 }
 
 nav ul li a:hover, #navdropdown:hover {
